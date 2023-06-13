@@ -3,7 +3,10 @@
 console.log('-- begin --');
 
 /**
- *
+ * Count the Occurrences of a Character in a String
+ * @param {string} text - The input string to search in
+ * @param {string} toCount - The character to count occurrences of
+ * @return {number} The number of occurrences of the character in the string
  */
 const countCharacter = (text, toCount) => {
   if (toCount.length !== 1) {

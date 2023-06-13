@@ -1,11 +1,17 @@
 import { readNumber, display } from '../../../../lib/dom-io.js';
 
-document.getElementById(__).addEventListener('click', () => {
+document.getElementById('do-math').addEventListener('click', () => {
   debugger;
 
   // read user values
 
-  // use a for loop to multiply the two numbers
+  let inputLeft = readNumber('left');
+  let inputRight = readNumber('right');
+
+  // Calculate the result
+  let result = inputLeft * inputRight;
 
   // display the product
+
+  display('product', result);
 });
