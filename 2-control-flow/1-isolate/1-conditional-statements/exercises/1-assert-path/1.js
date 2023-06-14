@@ -10,12 +10,13 @@ const value1 = true;
 const value2 = false;
 let path = '';
 
-if (value1 && !value2) {
+if (value1 && !value2) { // true || true
   path = 'if';
-} else if (!value1 || !value2) {
+  // breaks here 
+} else if (!value1 || !value2) { // true || False
   path = 'else if';
 }
 
-console.assert(path === _);
+console.assert(path === 'if');
 
 console.log('-- end --');
