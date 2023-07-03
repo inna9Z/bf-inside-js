@@ -5,7 +5,9 @@
 console.log('-- begin --');
 
 /**
- *
+ * @param {string} {text = ''} - the input text
+ * @param {number} {shift = 0} = the number of position of position to shift each position by the unicode  character
+ * return {number} 
  */
 const unicodeShuffle = (text = '', shift = 0) => {
   let encodedString = '';

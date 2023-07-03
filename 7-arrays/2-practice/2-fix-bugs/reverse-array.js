@@ -1,9 +1,10 @@
 // #todo
 
-/**
- *
+/** Reverse an array
+ * @param{string} {arr=[]} array to reverse
+ * @return {string} the reversed arr
  */
 export const reverseArray = (arr = []) => {
-  const backwards = arr.reverse();
-  return backwards;
+  return  [...arr].reverse();
+  
 };

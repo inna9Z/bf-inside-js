@@ -4,24 +4,20 @@
 
 console.log('-- begin --');
 
-/* Reversicasify
-
-  you can use for loops to do some logic for each element in a string
-
-*/
-
 const originalString = 'abcde';
 console.log('originalString:', originalString);
 
 let reverseUpperCase = '';
 
-for (_; _; _) {
-  // a blank canvas :)
+for (let i = originalString.length - 1; i >= 0; i--) {
+  const nextText = originalString[i].toUpperCase();
+  reverseUpperCase += nextText;
+  console.log(nextText)
 }
 
 console.assert(
   reverseUpperCase === 'EDCBA',
-  'reversed string is the original reversed',
+  'Reversed string is not correct',
 );
 
 console.log('-- end --');

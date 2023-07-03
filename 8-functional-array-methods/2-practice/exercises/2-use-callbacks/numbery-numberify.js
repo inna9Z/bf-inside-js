@@ -10,14 +10,15 @@
 export const numberyNumberify = (arr) => {
   // these work, you need to use them with the right array methods
   const isNotNaN = (entry) => {
-    return !Number.isNaN(entry);
+    return !Number.isNaN(Number(entry));
   };
   const castToNumber = (entry) => {
     return Number(entry);
   };
 
   // fill in the array method names and callbacks
-  const allValidNumbers = arr._(_)._(_);
+    const allValidNumbers = arr.filter(isNotNaN).map(castToNumber);
 
   return allValidNumbers;
+  
 };
