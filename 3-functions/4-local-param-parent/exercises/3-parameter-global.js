@@ -2,29 +2,42 @@
 
 'use strict';
 
-console.log('-- begin --');
+/* const person1 = {
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 35 
+}
+const person2 = {
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 37 
+}
+console.log(JSON.stringify(person1) === JSON.stringify(person2)); // true */
 
-let global = '<3';
+function deepEqual(object1, object2) {
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
 
-const jazz = (parameter) => {
-  global = `${global} jazzy`;
-  return `${global} ${parameter}`;
-};
+  if (keys1.length !== keys2.length) {
+    return false;
+  }
 
-const jazzReturn1 = jazz('hello');
-const jazz1 = jazzReturn1 === _;
-console.assert(jazz1, 'Test 1: jazz');
+  for (const key of keys1) {
+    const val1 = object1[key];
+    const val2 = object2[key];
+    const areObjects = isObject(val1) && isObject(val2);
+    if (
+      (areObjects && !deepEqual(val1, val2)) ||
+      (!areObjects && val1 !== val2)
+    ) {
+      return false;
+    }
+  }
 
-global = `${global}!`;
+  return true;
+}
 
-const jazzReturn2 = jazz('boat');
-const jazz2 = jazzReturn2 === _;
-console.assert(jazz2, 'Test 2: jazz');
-
-global = ':(';
-
-const jazzReturn3 = jazz('tree');
-const jazz3 = jazzReturn3 === _;
-console.assert(jazz3, 'Test 3: jazz');
-
-console.log('-- end --');
+function isObject(object) {
+  return object != null && typeof object === 'object';
+}
+console.log(deepEqual({ name: 'Inna', age: 30 }, { name: 'Inna', age: 35 }));

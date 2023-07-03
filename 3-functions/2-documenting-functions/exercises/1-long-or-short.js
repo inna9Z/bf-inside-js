@@ -5,11 +5,11 @@
 console.log('-- begin --');
 
 /**
- * _
+ * Determines if the given text is considered long or short based on the cutoff length.
  *
- * @_ {_} [_=_] - _
- * @_ {_} [_=_] - _
- * @_ {_} _
+ * @_param {string} [text= ""] - The text to evaluate.
+ * @_param {number} [cutoff= 0] - The cutoff length to compare against.
+ * @_return {string} _ should returnet the long or short based on the length of the text.
  */
 const longOrShort = (text = '', cutoff = 0) => {
   if (text.length < cutoff) {

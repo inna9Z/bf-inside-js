@@ -2,4 +2,4 @@
 
 debugger;
 
-const sayHi = __;
+const sayHi = 'Hello';

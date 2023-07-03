@@ -5,10 +5,18 @@
 /**
  * ___
  * @param {string} [text=''] - ___
- * @param {number} [repeats=_] - ___
+ * @param {number} [repeats=1] - ___
  * @returns {string} ___
  */
-__;
+
+ const repeat = (text = '', repeats = 1) => {
+  let repeated = '';
+  for (let i = 0; i < repeats; i++) {
+    repeated += text;
+  }
+
+  return repeated;
+};
 
 describe('repeater: repeats a string a specific number of times', () => {
   it('can repeat a string once', () => {

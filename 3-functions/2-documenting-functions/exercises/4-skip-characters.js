@@ -4,8 +4,13 @@
 
 console.log('-- begin --');
 
-/**
- *
+/** 
+ * Skips characters in a given text based on the specified skipping pattern.
+ *   
+ * @param {string} [text=''] - The input text to process.
+ * @param {number} [toSkip=1] - The number of characters to skip.
+ * @returns {string} The processed text after skipping characters.
+ 
  */
 const skipCharacters = (text = '', toSkip = 1) => {
   if (toSkip < 1) {
