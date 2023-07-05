@@ -335,4 +335,21 @@
 
 #### Week 2
 
+- [day 6](https://youtu.be/1M5qfVAn4zE)
+- [day 7](https://youtu.be/FX5D14oyOi4)
+- [day 8](https://youtu.be/MKKoPOtYc90)
+- [day 9](https://youtu.be/KpV81FjH7Mc)
+- [day 10](https://youtu.be/CMtwa_wJFMU)
+
+#### Week 3
+
+- [day 11](https://youtu.be/7Rdqb-lf1Dg)
+- [day 12](https://youtu.be/vsQik7WcQDs)
+
+#### Week 4
+
+- [DOM](https://youtu.be/4Ki-CkRblHk)
+- [separation of concerns 1](https://youtu.be/elHVVwIw8-M)
+- [separation of concerns 2](https://youtu.be/DwtsVfoAlrw)
+
 </details>
